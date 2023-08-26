@@ -1,3 +1,6 @@
+
+//on click of radio-button , background color changes as well as the text inside box get highlighted 
+
 // Add an event listener to all radio buttons
 const radioButtons = document.querySelectorAll('input[type="radio"]');
 radioButtons.forEach(radioButton => {
