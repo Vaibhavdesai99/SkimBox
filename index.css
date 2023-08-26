@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.box1,
+.box2,
+.box3 {
+  border: 1px solid rgb(12, 10, 10);
+  display: flex;
+  border-radius: 4px;
+  width: 128%;
+  padding: 17px 32px;
+}
+
+.box1 {
+  display: flex;
+}
+
+.LeftSide {
+  width: 102%;
+}
+.RightSide {
+  width: 30%;
+
+}
+
+.box2Name {
+  font-size: medium;
+  color: #e93656;
+  font-weight: bold;
+}
+.value_horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
+.left_1_Box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.leftInfoBox1,
+.leftInfoBox2,
+.leftInfoBox3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: flex-start;
+  justify-content: center;
+  /* font-weight: 600; */
+}
+em {
+  position: relative;
+  left: 21rem;
+  color: red;
+}
+
+/* SECOND-BOX  */
+
+select {
+  width: 5rem;
+  height: 1.4rem;
+}
+
+.select {
+  display: flex;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  gap: 1rem;
+}
+
+.Size {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.Colour {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Total */
+.Total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 11rem;
+  margin-top: 2rem;
+}
+
+.Total :nth-child(1) {
+  color: red;
+  font-weight: 500;
+  font-size: large;
+}
+
+.Total :nth-child(2) {
+  color: black;
+  font-size: bold;
+  font-weight: 700;
+}
+
+/* button add to cart  */
+
+.button {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+button {
+  padding: 0.7rem 12rem;
+  margin-top: 2rem;
+  background-color: rgb(131, 16, 16);
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: large;
+}
+
+/* Adding hr line to text on left and right side  */
+
+.hr-lines {
+  color: #e93656;
+  font-weight: lighter;
+}
+
+/* .hr-lines:before  {
+  content: " ";
+  display: block;
+  height: 1px;
+  width: 150px;
+  position: absolute;
+  top: 10%;
+  left: 21rem;
+  background: rgb(15, 14, 14);
+}
+
+.hr-lines::after {
+  content: " ";
+  display: block;
+  height: 1px;
+  width: 148px;
+  position: absolute;
+  top: 7%;
+  left: 31rem;
+  background: rgb(15, 14, 14);
+} */
+
+/* Media Query for screens with max width of 480px */
+@media (max-width: 480px) {
+  .boxes {
+    gap: 1rem;
+  }
+
+  .box1,
+  .box2,
+  .box3 {
+    padding: 10px;
+  }
+
+  select {
+    height: 28px;
+    margin-top: 3px;
+  }
+
+  .select {
+    margin-top: 5px;
+  }
+
+  .Total {
+    gap: 8px;
+  }
+}
